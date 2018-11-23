@@ -13,7 +13,7 @@ function init() {
 	material = new THREE.MeshNormalMaterial();
 
   var loader = new THREE.STLLoader();
-  loader.load( '/models/11.stl', function ( geometry ) {
+  loader.load( 'models/11.stl', function ( geometry ) {
 
     innerMesh = new THREE.Mesh( geometry, material );
     // innerMesh.position.set( 0.136, - 0.37, - 0.6 );
