@@ -1,0 +1,8 @@
+#canvas {
+    flex: 1 1 auto;
+    margin-bottom: auto;
+}
+
+#controls {
+    flex: 0 1 40px;
+}

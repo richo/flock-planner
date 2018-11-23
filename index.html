@@ -1,15 +1,36 @@
 <!doctype html>
 <html lang=en>
-    <head>
-        <meta charset=utf-8>
-        <title>Flockplanner</title>
-        <script src="lib/three.min.js"></script>
-        <script src="lib/STLLoader.js"></script>
-        <script src="lib/DragControls.js"></script>
-        <script src="lib/TrackballControls.js"></script>
-        <script src="app.js"></script>
-    </head>
-    <body onload="init()">
-    </body>
+  <head>
+    <meta charset=utf-8>
+    <title>Flockplanner</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <script src="lib/three.min.js" type="application/javascript"></script>
+    <script src="lib/STLLoader.js" type="application/javascript"></script>
+    <script src="lib/DragControls.js" type="application/javascript"></script>
+    <script src="lib/TrackballControls.js" type="application/javascript"></script>
+    <script src="app.js" type="application/javascript"></script>
+  </head>
+  <body onload="init()">
+    <div id="canvas"></div>
+    <div id="controls">
+      <form action="#">
+        <p>
+        <label>
+          <input name="visible-face" type="radio" value="side" checked />
+          <span>Side</span>
+        </label>
+        <label>
+          <input name="visible-face" type="radio" value="back" />
+          <span>Back</span>
+        </label>
+        <label>
+          <input name="visible-face" type="radio" value="top" />
+          <span>Top</span>
+        </label>
+        </p>
+      </form>
+
+    </div>
+  </body>
 </html>
 
